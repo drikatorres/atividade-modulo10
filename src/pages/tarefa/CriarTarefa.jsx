@@ -6,7 +6,7 @@ import Grid from '@mui/material/Grid';
 import Card from '@mui/material/Card';
 import CardHeader from '@mui/material/CardHeader';
 import CardContent from '@mui/material/CardContent';
-import CardActions from '@mui/material/CardActions';
+
 import Button from '@mui/material/Button';
 
 //Declaração do componente CriarTarefa, recebendo como props, do Componente ListarTarefa, os states handClose, tarefas e setTarefas
@@ -136,9 +136,9 @@ const CriarTarefa = ({handleClose, tarefas, setTarefas}) =>{
                     fontWeight: 400,
                   }} 
                 >
-                  <MenuItem value={'Aguardando'}>Aguardando</MenuItem>
-                  <MenuItem value={'Em Andamento'}>Em Andamento</MenuItem>
-                  <MenuItem value={'Concluída'}>Concluída</MenuItem>
+                  <MenuItem value={'Aguardando'}>Status: Aguardando</MenuItem>
+                  <MenuItem value={'Em Andamento'}>Status: Em Andamento</MenuItem>
+                  <MenuItem value={'Concluída'}>Status: Concluída</MenuItem>
                 </Select>
               </FormControl>
             </Grid>
